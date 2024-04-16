@@ -1,0 +1,58 @@
+<div class="flex flex-col items-center justify-center">
+    <div
+        class="p-4 text-6xl max-sm:text-5xl max-sm:leading-normal transition-all duration-300 leading-normal font-extrabold text-center">
+        Simplify Your Tasks<br> Amplify Your Productivity!!
+    </div>
+    <div class="text-xl w-2/3 text-slate-400 font-normal text-center">
+        Stay focused, organized, and in control with our intuitive to-do list website, revolutionizing task management
+        for users worldwide
+    </div>
+    <button class="bg-[#e34432] text-white px-4 py-3 my-3 text-xl font-medium rounded-xl">Start for free</button>
+</div>
+
+<div class="flex justify-center items-center ">
+    <video src="../../../assets/bg.webm" class="bg-blend-overlay" autoplay loop></video>
+    <div class="absolute w-[80%] min-h-[500px] p-4 bg-white rounded-xl h-auto border-2 shadow-sm">
+        <div class="text-center text-3xl my-2 font-medium text-slate-700 bg-slate-50 p-3 rounded-full">
+            Today's Tasks
+        </div>
+        <div class="flex justify-center items-center">
+            <div class="bg-red-100 rounded-xl p-2 w-[60%] h-full">
+                <table class="border-2 border-black p-4">
+                    @for(indivisualtask of task;track $index){
+                        <tr class="p-2 border-2 border-black">
+                            <app-task-item [indivisualtask]="indivisualtask"></app-task-item>
+                        </tr>
+                    }
+                </table>
+                
+            </div>
+            <div class="w-[40%] p-2 m-2 flex flex-col justify-center items-center rounded-xl bg-blue-100">
+                <div class="text-center w-full text-xl font-medium m-2">
+                    Add a Task
+                </div>
+                <div class="m-2">
+                    <label for="task-title" class="text-lg font-light px-2">Title:</label>
+                    <input type="text" class="w-auto border-2 rounded-xl p-1">
+                </div>
+                <div class="m-2">
+                    <label for="task-tags" class="text-lg font-light px-2">Time:</label>
+                    <input type="time" class="w-auto border-2 rounded-xl p-1">
+                </div>
+                <div class="m-2">
+                    <label for="due-date" class="text-lg font-light px-2">Date:</label>
+                    <mat-form-field>
+                        <mat-label>Choose due date</mat-label>
+                        <input matInput [matDatepicker]="picker">
+                        <mat-hint>MM/DD/YYYY</mat-hint>
+                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                      </mat-form-field>
+                </div>
+                <button class="bg-[#abc2d0f5] text-white px-3 py-1 my-3 text-xl font-medium rounded-xl">Add Task</button>
+
+            </div>
+
+        </div>
+    </div>
+</div>
