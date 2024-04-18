@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "./server",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "./src",
+        "use": "@vercel/static"
+      }
+    ]
+  }
+  

@@ -1,7 +1,9 @@
+import { Time } from "@angular/common"
+
 export class Task{
     sno:number
     title:string
-    time:Date
-    date:Date
+    time:Time
+    date:string
     active:boolean
 }

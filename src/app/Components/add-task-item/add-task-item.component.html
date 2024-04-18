@@ -1,0 +1,25 @@
+<form class="flex flex-col justify-center items-center" (ngSubmit)="onSubmit()">
+    <div class="text-center w-full text-xl font-medium m-2">
+        Add a Task
+    </div>
+    <div class="m-2">
+        <label for="tasktitle" class="text-lg max-sm:text-[16px] font-light px-2">Title:</label>
+        <input type="text" class="w-auto border-2 rounded-xl p-1" id="tasktitle" name="tasktitle" [(ngModel)]="tasktitle">
+    </div>
+    <div class="m-2">
+        <label for="tasktime" class="text-lg max-sm:text-[16px] font-light px-2">Time:</label>
+        <input type="time" class="w-auto border-2 rounded-xl p-1" id="tasktime" name="tasktime" [(ngModel)]="tasktime">
+    </div>
+    <div class="m-2">
+        <label for="duedate" class="text-lg max-sm:text-[16px] font-light px-2">Date:</label>
+        <mat-form-field>
+            <mat-label>Choose due date</mat-label>
+            <input matInput [matDatepicker]="picker" id="duedate" name="duedate" [(ngModel)]="duedate">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+    </div>
+    <button class="bg-[#abc2d0f5] text-white px-3 py-1 my-3 text-xl font-medium rounded-xl">Add Task</button>
+    
+</form>
