@@ -9,7 +9,11 @@
     <button class="text-xl px-4 py-2 border-none hover:bg-gray-100 rounded-xl">Pricing</button>
     <div class="m-1 bg-gray-400 w-1 h-full rounded-xl text-gray-400">.</div>
     <button class="text-xl  px-4 py-2 hover:bg-gray-100 rounded-xl mx-2">Abouts</button>
-    <button class="bg-[#e34432] text-white px-4 py-3 text-xl font-medium rounded-xl">Logged In</button>
+    @if(loggedIn){
+      <button class="bg-[#e34432] text-white px-4 py-3 text-xl font-medium rounded-xl">Logged In</button>
+    }@else{
+      <button class="bg-[#e34432] text-white px-4 py-3 text-xl font-medium rounded-xl" (click)="sign()">Sign Up</button>
+    }
   </div>
 
 </header>
