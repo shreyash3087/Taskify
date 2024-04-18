@@ -1,3 +1,7 @@
+If Google Authentication Doesn't Work (Most Likely Wouldn't) ,Continue Without Google Auth.
+The Webpage is currently being hosted on vercel - 
+https://taskify-one-phi.vercel.app/
+
 # Taskify
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
