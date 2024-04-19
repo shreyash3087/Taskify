@@ -1,6 +1,7 @@
-If Google Authentication Doesn't Work (Most Likely Wouldn't), Continue Without Google Auth, I made it work for Localhost but I dont know how to deploy the Node Server on Vercel.Also The Webpage is not integrated with Firebase beacuse I simply dont know about firebase much at the moment,and I had to complete the Task within the time constraints.
-The Webpage is currently being hosted on vercel - 
+If Google Authentication Doesn't Work (Most Likely Wouldn't), Continue Without Google Auth, I made it work for localhost but I dont know how to deploy the Node Server on Vercel.Also The Webpage is not integrated with Firebase beacuse I simply dont know about firebase much at the moment,and I had to complete the Task within the time constraints.
 (Won't say its my best work,but I tried to give my best)
+
+The Webpage is currently being hosted on vercel - 
 https://taskify-one-phi.vercel.app/
 
 # Taskify
